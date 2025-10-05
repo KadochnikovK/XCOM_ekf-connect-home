@@ -383,6 +383,9 @@ li {
   display: flex;
   flex-direction: column;
 }
+.form__item:nth-child(1) {
+  grid-column: 1/-1;
+}
 @media (min-width: 1024px) {
   .form__item:nth-last-child(2) {
     grid-column-start: 2;

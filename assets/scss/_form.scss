@@ -14,6 +14,10 @@
         display: flex;
         flex-direction: column;
 
+        &:nth-child(1) {
+            grid-column: 1 / -1;
+        }
+
         @include md {
             &:nth-last-child(2) {
                 grid-column-start: 2;
