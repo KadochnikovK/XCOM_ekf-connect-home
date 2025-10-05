@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // font-family: Second;
+    color: var(--color-dark);
+    font-size: var(--size-sm);
+    border: var(--size-xxxxs) solid var(--color-main);
+    border-radius: var(--size-sm);
+    padding: var(--size-xxs) var(--size-xl);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    // max-width: max-content;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    // border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-main);
+        color: var(--color-bright);
+    }
+
+}

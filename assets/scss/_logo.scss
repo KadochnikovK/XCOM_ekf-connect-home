@@ -1,0 +1,9 @@
+.logo {
+    height: calc(var(--size-md))
+}
+
+.logos {
+    display: flex;
+    gap: var(--size-sm);
+    align-items: center;
+}

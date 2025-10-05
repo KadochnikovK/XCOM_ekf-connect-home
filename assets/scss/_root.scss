@@ -1,0 +1,21 @@
+:root {
+    // colors
+    --color-main: #DA0713;
+    --color-second: #F2E7E1;
+    --color-grey: #6A6A6A;
+    --color-bright: #fff;
+    --color-dark: #000;
+    --color-red: #b41313;
+
+    // sizes
+    --size-xxxxs: calc((1vw + 1vh) * 0.2);
+    --size-xxxs: calc((1vw + 1vh) * 0.4);
+    --size-xxs: calc((1vw + 1vh) * 0.6);
+    --size-xs: calc((1vw + 1vh) * 0.8);
+    --size-sm: calc((1vw + 1vh) * 1);
+    --size-md: calc((1vw + 1vh) * 1.2);
+    --size-lg: calc((1vw + 1vh) * 2);
+    --size-xl: calc((1vw + 1vh) * 2.5);
+    --size-xxl: calc((1vw + 1vh) * 5);
+    --size-xxxl: calc((1vw + 1vh) * 10);
+}

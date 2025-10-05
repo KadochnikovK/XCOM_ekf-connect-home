@@ -1,0 +1,10 @@
+.header {
+    margin-bottom: var(--size-sm);
+    display: flex;
+
+    &__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,54 @@
+.schedule {
+    &__list {
+        list-style: none;
+        counter-reset: number-counter;
+
+        padding-left: 0;
+    }
+
+    &__item {
+        counter-increment: number-counter;
+        font-size: 5.5vw;
+        padding-left: 6vw;
+        position: relative;
+        text-transform: uppercase;
+        color: var(--color-dark);
+
+        &::before {
+            content: "[" counter(number-counter) "]";
+            font-size: 3.5vw;
+            top: 1.7vw;
+        
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: var(--color-main);
+
+        }
+    }
+
+    &__sublist {
+        list-style: none;
+        counter-reset: number-counter;
+        font-size: var(--size-sm);
+        padding-left: 0;
+    }
+
+    &__subitem {
+        counter-increment: number-counter;
+        position: relative;
+        text-transform: lowercase;
+        padding-left: calc((1vh + 1vw) * 1.8);
+        color: var(--color-grey);
+
+        &::before {
+            content: "(" counter(number-counter) ")";
+            color: var(--color-grey);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+
+        }
+    }
+
+}

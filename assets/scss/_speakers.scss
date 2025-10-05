@@ -1,0 +1,54 @@
+.speakers {
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr var(--size-sm) 1fr;
+    }
+
+    &__item {
+        border-top: var(--size-xxxxs) solid var(--color-main);
+        border-bottom: var(--size-xxxxs) solid var(--color-main);
+
+        &--divider {
+            border-left: var(--size-xxxxs) solid var(--color-main);
+            border-right: var(--size-xxxxs) solid var(--color-main);
+        }
+    }
+
+    &__image-block {
+        height: calc((1vh + 1vw) * 25);
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    &__star {
+        position: absolute;
+        left: var(--size-sm);
+        top: var(--size-sm);
+        width: var(--size-xl);
+
+
+        @include md {
+            width: var(--size-xxl);
+        }
+
+        @include xl {
+            width: var(--size-xxxl);
+        }
+
+    }
+
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: auto;
+        object-fit: contain;
+    }
+
+    &__name {
+        border-top: var(--size-xxxxs) solid var(--color-main);
+        font-size: 5.5vw;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/plugins/animations/animations.css">
+
+    <title>EKF Connect Home</title>
+
+</head>
+
+<body>
+    <header class="header container">
+        <div class="container__content header__content">
+            <div class="logos">
+                <a href="#">
+                    <img class="logos__img logo" src="assets/images/logo-ekf.svg" alt="">
+                </a>
+                <a href="https://www.xcom.ru/">
+                    <img class="logos__img logo" src="assets/images/logo-xcom.svg" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <div class="menu__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="menu__list">
+                    <a class="menu__link" href="#schedule">Программа</a>
+                    <a class="menu__link" href="#speakers">Спикеры</a>
+                    <a class="menu__link" href="#registration">Регистрация</a>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="container hero">
+            <div class="container__content hero__content">
+                <h1 class="headline hero__headline">
+                    EKF Connect Home <img class="logo" src="assets/images/logo-ekf-small.svg" alt=""><br>
+                    <a href="#registration">
+                        <img class="arrow" style="width: 5.5vw;" src="assets/images/arrow.svg" alt="">
+                    </a>
+                    Решение для девелоперов
+                </h1>
+                <div class="hero__description">
+                    <p>Вебинар</p>
+                    <p>14 октября 11:00
+                        <a href="#registration">
+                            <img class="arrow" src="assets/images/arrow.svg" alt="">
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="schedule" class="schedule container">
+            <div class="schedule__content container__content">
+                <h2 class="headline">Программа</h2>
+
+                <ul class="schedule__list">
+                    <li class="schedule__item">cloud software</li>
+                    <li class="schedule__item">умные устройства:
+                        <ul class="schedule__sublist">
+                            <li class="schedule__subitem">Управление освещением</li>
+                            <li class="schedule__subitem">Управление электропитанием </li>
+                            <li class="schedule__subitem">Управление климатом </li>
+                            <li class="schedule__subitem">Управление бытовой техникой</li>
+                            <li class="schedule__subitem">Управление безопасностью </li>
+                            <li class="schedule__subitem">Датчики и ZigBee-хабы</li>
+                        </ul>
+                    </li>
+                    <li class="schedule__item">решения</li>
+                    <li class="schedule__item">ответы на вопросы</li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section id="speakers" class="speakers container">
+            <div class="speakers__content container__content">
+                <h2 class="headline">Спикеры</h2>
+
+                <div class="speakers__list">
+                    <div class="speakers__item">
+                        <div class="speakers__image-block">
+                            <img class="speakers__star" src="assets/images/star.svg" alt="">
+                            <img class="speakers__image" src="assets/images/speaker-01.png" alt="">
+                        </div>
+
+                        <p class="speakers__name">Антон усков</p>
+                    </div>
+                    <!-- второй элеменнт только для разделения, не удалять и не заполнять данными!!!  -->
+                    <div class="speakers__item speakers__item--divider">
+                        <div class="speakers__image-block">
+
+                        </div>
+                        <p class="speakers__name"></p>
+                    </div>
+                    <div class="speakers__item">
+                        <div class="speakers__image-block">
+
+                            <img class="speakers__image" src="" alt="">
+                        </div>
+                        <p class="speakers__name"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration container">
+            <div class="registration__content container__content">
+                <h2 class="headline">Регистрация</h2>
+
+                <form class="form" id="main-form" action="#">
+
+                    <div class="form__wrapper">
+                        <div class="form__item">
+                            <label class="form__label" for="name">ФИО</label>
+                            <input type="text" class="form__input" name="name" value="" id="name" />
+
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="company">Название организации</label>
+                            <input type="text" class="form__input" name="company" value="" id="company" />
+
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="email">Почта</label>
+                            <input type="email" class="form__input" name="email" value="" id="email" />
+
+                        </div>
+                        <!-- <div class="form__item form__item--checkbox">
+                                <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox"
+                                    checked />
+                                <label for="privacy-policy" class="form__checkbox-label">Согласие на обработку</label>
+                                <div class="error-message" style="display: none"></div>
+                            </div> -->
+
+                        <button type="submit" class="form__button button">Занять место</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container" id="contacts">
+        <div class="footer__content container__content">
+            <a href="https://www.xcom.ru/" class="footer__logo">
+                <img class="logo footer__logo-img" src="./assets/images/logo-xcom.svg" alt="XCOM" />
+            </a>
+
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">О компании</p>
+                    <div class="footer__text">
+                        <a href="#">История</a>
+                        <a href="#">О компании</a>
+                        <a href="#">About us</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Акции</a>
+                        <a href="#">Бизнес-акселератор X-Com</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Пресс-центр</a>
+                        <a href="#">Статьи об импортозамещении</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">Системная интеграция</p>
+                    <div class="footer__text">
+                        <a href="#">Монтаж и пусконакладка серверов</a>
+                        <a href="#">Построение СХД и внедрение NAS-массивов под ключ</a>
+                        <a href="#">Внедрение программного обеспечения под ключ</a>
+                        <a href="#">Внедрение и сервис сетевого оборудования</a>
+                        <a href="#">Внедрение офисных IP-ATC</a>
+                        <a href="#">Оснащение и сервис рабочих мест</a>
+                        <a href="#">Внедрение систем корпоративной печати</a>
+                        <a href="#">Построение инженерных инфраструктур</a>
+                        <a href="#">Внедрение и сервис систем безопасности</a>
+                        <a href="#">Расчет, поставка, монтаж и обслуживание кабеленесущих систем</a>
+                        <a href="#">Аутсорсинг информационной безопасности</a>
+                        <a href="#">Мультимедийные решения для корпоративных коммуникаций</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">Мероприятия</p>
+                    <div class="footer__text">
+                        <p class="footer__sub-label">2024</p>
+                        <a href="#">Вебинар X-Com и Катюша</a>
+                        <a href="#">Вебинар Видеорегистраторы TRASSIR</a>
+                        <a href="#">Бизнес-ужин X-Com совместно с IRBIS, Systeme Electric, IDS</a>
+                        <a href="#">ИТ-конференция X-Com "Energy Day"</a>
+                        <a href="#">Конференция "Здрав IT"</a>
+                        <a href="#">Вебинар "Печать без границ: новый уровень экономии и качества"</a>
+                        <a href="#">Демо-день конкурса "Беспилотники: поможем взлететь Вашему бизнесу"</a>
+
+                        <p class="footer__sub-label">2025</p>
+                        <a href="#">Конференция "Цифровизация науки и образования"</a>
+                        <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
+                        <a href="#">Конференция "Интеграторы систем безопасности"</a>
+                        <a href="#">Конференция "Pro-AV"</a>
+                        <a href="#">Вебинар "Пилотные проекты российского софта"</a>
+                        <a href="#">Конференция "Системы безопасности"</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contacts">
+                <div class="footer__item">
+                    <p class="footer__label">Контакты</p>
+                    <div class="footer__text">
+                        <span>+7 (495) 223-63-39 (Москва)</span>
+                        <span>+7 (812) 740-11-20 (Санкт-Петербург)</span>
+                        <span>Электронная почта: om@xcom.ru</span>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__icons">
+                        <a href="#"><img src="./assets/images/tg.svg" alt="Telegram" /></a>
+                        <a href="#"><img src="./assets/images/vk.svg" alt="VK" /></a>
+                        <a href="#"><img src="./assets/images/mail.svg" alt="Mail" /></a>
+                    </div>
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p class="footer__copy-text">Использование материалов, размещенных на сайте, допускается только с
+                    письменного разрешения «ООО М-ИНВЕСТ»</p>
+                <p class="footer__copy-text">2024 © «ООО М-ИНВЕСТ». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal animate__animated" style="display: none">
+        <div class="modal__window animate__animated">
+            <div class="modal__close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="modal__content">
+                <p class="modal__headline"></p>
+                <p class="modal__text"></p>
+                <a class="modal__button button">
+
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

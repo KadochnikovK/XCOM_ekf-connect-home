@@ -1,0 +1,44 @@
+.hero {
+
+    padding-bottom: var(--size-xxs);
+
+    border-bottom: var(--size-xxxxs) solid var(--color-main);
+
+    height: 70vh;
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__headline {
+        font-size: 5.5vw;
+        margin: 0;
+        margin-top: auto;
+
+        .arrow {
+            width: 5.5vw !important;
+              height: auto !important;
+        }
+
+        .logo {
+            width: 5.5vw !important;
+            height: auto !important;
+        }
+    }
+
+    &__description {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--size-sm);
+
+        .arrow {
+            width: var(--size-sm);
+        }
+    }
+
+
+}
