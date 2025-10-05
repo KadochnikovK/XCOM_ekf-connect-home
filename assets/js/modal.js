@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modalButton.textContent = buttonText;
 
 
-        modal.style.visibility = "visible";
+        modal.style.display = "flex";
 
         setTimeout(() => {
 

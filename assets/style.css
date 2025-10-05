@@ -88,14 +88,8 @@
   box-sizing: border-box !important;
   font-family: Main, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  text-wrap: wrap;
   scroll-behavior: smooth;
   color: var(--color-main);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
-  word-break: break-word;
 }
 
 body {
