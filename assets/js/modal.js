@@ -132,57 +132,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showModal(title, text, buttonText) {
-
-        let modal = document.querySelector(".modal");
-
-        if (!modal) {
-            modal = document.createElement("div");
-            modal.className = "modal";
-            modal.innerHTML = `
-                <div class="modal__window">
-                    <button class="modal__close">&times;</button>
-                    <h3 class="modal__headline"></h3>
-                    <p class="modal__text"></p>
-                    <button class="modal__button button"></button>
-                </div>
-            `;
-            document.body.appendChild(modal);
-        }
-
+        const modal = document.querySelector(".modal");
         const modalWindow = modal.querySelector(".modal__window");
         const modalHeadline = modal.querySelector(".modal__headline");
         const modalText = modal.querySelector(".modal__text");
         const modalButton = modal.querySelector(".modal__button");
         const modalClose = modal.querySelector(".modal__close");
 
+
         modalHeadline.textContent = title;
         modalText.textContent = text;
         modalButton.textContent = buttonText;
 
-        modal.style.display = "flex";
+
+        modal.style.visibility = "visible";
+
+        setTimeout(() => {
+
+            modal.classList.remove("animate__fadeIn", "animate__fadeOut");
+            modalWindow.classList.remove("animate__fadeInUp", "animate__fadeOutDown");
 
 
-        if (typeof animate !== 'undefined') {
-            modalWindow.classList.add("animate__fadeInUp");
             modal.classList.add("animate__fadeIn");
-        }
+            modalWindow.classList.add("animate__fadeInUp");
+        }, 10);
 
         function closeModal() {
-            if (typeof animate !== 'undefined') {
-                modalWindow.classList.remove("animate__fadeInUp");
-                modalWindow.classList.add("animate__fadeOutDown");
-                modal.classList.remove("animate__fadeIn");
-                modal.classList.add("animate__fadeOut");
-            }
+
+            modal.classList.remove("animate__fadeIn");
+            modalWindow.classList.remove("animate__fadeInUp");
+
+            modal.classList.add("animate__fadeOut");
+            modalWindow.classList.add("animate__fadeOutDown");
 
             setTimeout(() => {
                 modal.style.display = "none";
-                if (typeof animate !== 'undefined') {
-                    modalWindow.classList.remove("animate__fadeOutDown");
-                    modal.classList.remove("animate__fadeOut");
-                }
+
+                modal.classList.remove("animate__fadeOut");
+                modalWindow.classList.remove("animate__fadeOutDown");
             }, 500);
         }
+
 
         modalButton.onclick = closeModal;
         modalClose.onclick = closeModal;
@@ -193,4 +183,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-}); s
+});
